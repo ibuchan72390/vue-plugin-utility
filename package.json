@@ -1,14 +1,19 @@
 {
   "name": "vue-plugin-utility",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility to standardize and strongly type our vue plugin modules",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc index.ts",
-    "prepublish": "npm run-script build"
+    "build": "tsc index.ts --declaration",
+    "prepublishOnly": "npm run-script build",
+    "postpublish": ""
   },
   "author": "Ian Buchan",
   "license": "ISC",
+  "dependencies": {
+    "rimraf": "^2.6.3"
+  },
   "devDependencies": {
     "typescript": "^3.2.2",
     "vue": "^2.5.22"
@@ -16,6 +21,7 @@
   "files": [
     "/src/*",
     "index.ts",
-    "index.js"
+    "index.js",
+    "README.md"
   ]
 }

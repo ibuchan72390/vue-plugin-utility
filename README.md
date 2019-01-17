@@ -40,10 +40,11 @@ export default MyPlugin
 Then in your consuming project, you can do the following:
 
 ```typescript
+import Vue from 'vue'
 import { PluginUtil } from 'vue-plugin-utiltiy'
 import { MyPlugin } from 'my-cool-module'
 
 export default async (context) => {
-  PluginUtil.configurePlugin(PhotoPlugin, context)
+  PluginUtil.configurePlugin(Vue, PhotoPlugin, context)
 }
 ```
