@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc index.ts --declaration",
     "prepublishOnly": "npm run-script build",
-    "postpublish": ""
+    "postpublish": "rimraf *.js && rimraf *.d.ts && rimraf src/*.js && rimraf src/*.d.ts"
   },
   "author": "Ian Buchan",
   "license": "ISC",
