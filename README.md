@@ -1,4 +1,4 @@
-#vue-plugin-utility
+# vue-plugin-utility
 
 This library is simply meant to offer a standardized way of working with and building plugins for Vue / Nuxt
 
@@ -11,7 +11,7 @@ It provides 2 simple classes:
   * Explained [here](https://github.com/nuxt/nuxt.js/issues/2267)
 
 
-##Building a Component Module
+## Building a Component Module
 Generally, you will set up your target build as the module Plugin file for component packages
 The plugin file should be laid out as follows:
 
@@ -36,7 +36,7 @@ export const MyPlugin: IPluginModule = {
 export default MyPlugin
 ```
 
-##Consuming a Component Module
+## Consuming a Component Module
 Then in your consuming project, you can do the following:
 
 ```typescript
